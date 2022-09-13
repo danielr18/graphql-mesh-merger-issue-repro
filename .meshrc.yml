@@ -1,0 +1,13 @@
+sources:
+  - name: CommonGood
+    handler:
+      graphql:
+        endpoint: https://countries.trevorblades.com
+additionalTypeDefs: |
+  extend type Country {
+    title: String
+  }
+additionalResolvers:
+  - './resolvers'
+
+# merger: stitching
